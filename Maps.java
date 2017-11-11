@@ -88,8 +88,8 @@ public class Maps extends Fragment implements OnMapReadyCallback,
         GoogleMap.InfoWindowAdapter, GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
-    private static final long POINT_RADIUS = 120; // in Meters
-    private static final long PROX_ALERT_EXPIRATION = 5000; //-1     It will never expire
+    private static final long POINT_RADIUS = 50;
+    private static final long PROX_ALERT_EXPIRATION = 5000; //-1 It will never expire
     private static final String PROX_ALERT_INTENT = "com.paridel.mazone.fragments";
     private static final int REQUEST_LOCATION_CODE = 99;
     private static final int REQUEST_CHECK_SETTINGS_GPS = 0x1;

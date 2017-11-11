@@ -352,10 +352,7 @@ public class Maps extends Fragment implements OnMapReadyCallback,
         locManager.addProximityAlert(lat, lon, POINT_RADIUS, PROX_ALERT_EXPIRATION, pendingIntent);
 
         IntentFilter filter = new IntentFilter(PROX_ALERT_INTENT);
-        LocalBroadcastManager.getInstance(getContext()).registerReceiver(new ProximityIntentReceiver(), filter);
-        //getContext().registerReceiver(new ProximityIntentReceiver(), filter);
-
-        //locManager.removeProximityAlert(pendingIntent);
+        getContext().registerReceiver(new ProximityIntentReceiver(), filter);
     }
 
 
